@@ -1,5 +1,6 @@
 // https://github.com/Polymer/layout/blob/master/layout.html
 /** TODO: support other browser prefixes */
+// Demo : https://www.polymer-project.org/0.5/docs/polymer/layout-attrs.html
 var extend = Object.create.bind(Object);
 exports.flexRoot = {
     display: 'flex'
