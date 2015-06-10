@@ -1,0 +1,26 @@
+{
+  "name": "layoutjs",
+  "version": "1.0.0",
+  "description": "Layout attributes abstraction over flexbox",
+  "main": "layout.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basarat/layoutjs.git"
+  },
+  "keywords": [
+    "layout",
+    "flexbox",
+    "reactjs",
+    "polymer",
+    "angularjs"
+  ],
+  "author": "basarat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basarat/layoutjs/issues"
+  },
+  "homepage": "https://github.com/basarat/layoutjs#readme"
+}
