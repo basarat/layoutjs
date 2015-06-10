@@ -1,6 +1,5 @@
+// Other vendor prefix support can be provided by external projects like : autoprefixer embedded into "radium"
 // https://github.com/Polymer/layout/blob/master/layout.html
-/** TODO: support other browser prefixes */
-// Demo : https://www.polymer-project.org/0.5/docs/polymer/layout-attrs.html
 var extend = Object.create.bind(Object);
 exports.flexRoot = {
     display: 'flex'
@@ -95,3 +94,66 @@ exports.justified = {
     justifyContent: 'space-between'
 };
 exports.centerCenter = extend(exports.center, exports.centerJustified);
+exports.selfStart = {
+    alignSelf: 'flex-start'
+};
+exports.selfCenter = {
+    alignSelf: 'center'
+};
+exports.selfEnd = {
+    alignSelf: 'flex-end'
+};
+exports.selfStretch = {
+    alignSelf: 'stretch'
+};
+exports.block = {
+    display: 'block'
+};
+exports.hidden = {
+    display: 'none'
+};
+exports.invisible = {
+    visibility: 'hidden'
+};
+exports.relative = {
+    position: 'relative'
+};
+exports.fit = {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+};
+exports.fullBleedBody = {
+    margin: 0,
+    height: '100vh'
+};
+exports.scroll = {
+    'webkitOverflowScrolling': 'touch',
+    overflow: 'auto'
+};
+exports.fixed = {
+    position: 'fixed'
+};
+exports.fixedBottom, exports.fixedLeft, exports.fixedRight, exports.fixedTop;
+exports.fixedTop = extend(exports.fixed, {
+    top: 0,
+    left: 0,
+    right: 0,
+});
+exports.fixedRight = extend(exports.fixed, {
+    top: 0,
+    right: 0,
+    bottom: 0,
+});
+exports.fixedBottom = extend(exports.fixed, {
+    right: 0,
+    bottom: 0,
+    left: 0,
+});
+exports.fixedLeft = extend(exports.fixed, {
+    top: 0,
+    bottom: 0,
+    left: 0,
+});
