@@ -18,7 +18,9 @@ var Demo = React.createClass({
 }
 ```
 
-Checkout the [complete demo that you can mess around with](http://plnkr.co/edit/T3N3xXk86ZHCD1iXNcJj?p=preview). 
+Checkout the [complete demo]
+
+And a [plnkr that you can mess with](http://plnkr.co/edit/T3N3xXk86ZHCD1iXNcJj?p=preview). 
 
 ## Inspiration
 Inspired by [polymer layout.html](https://www.polymer-project.org/0.5/docs/polymer/layout-attrs.html).
