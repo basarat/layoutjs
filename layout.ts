@@ -119,7 +119,7 @@ export var endJustified = {
 export var aroundJustified = {
     justifyContent: 'space-around'
 };
-export var justified = {
+export var betweenJustified = {
     justifyContent: 'space-between'
 };
 

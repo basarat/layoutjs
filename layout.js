@@ -105,7 +105,7 @@ exports.endJustified = {
 exports.aroundJustified = {
     justifyContent: 'space-around'
 };
-exports.justified = {
+exports.betweenJustified = {
     justifyContent: 'space-between'
 };
 exports.centerCenter = extend(exports.center, exports.centerJustified);

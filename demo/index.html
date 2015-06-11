@@ -56,6 +56,7 @@ var Demo = React.createClass({
         
         var tallVertical = layout.extend(layout.vertical,{height:'250px'});
         var tallHorizontal = layout.extend(layout.horizontal,{height:'150px'});
+        var narrowHorizontal = layout.extend(layout.horizontal,{width:'220px'});
         
         return <div>
             <h2 id="horizontal-and-vertical-layout">Horizontal and vertical layout<a class="permalink" title="Permalink" href="#horizontal-and-vertical-layout">#</a></h2>
@@ -96,6 +97,64 @@ var Demo = React.createClass({
             <p>By default, children stretch to fit the cross-axis (e.g. <em>vertical</em> stretching in a <em>horizontal</em> layout).</p>
             <div className="demo" style={tallHorizontal}>
               <div>Stretch Fill</div>
+            </div>
+            
+            <p>Position <em>across</em> the main axis (e.g. <em>vertically</em> in a <em>horizontal</em> layout) by adding <code>center</code> or <code>start</code> or <code>end</code>.</p>
+            <div className="demo" style={layout.extend(tallHorizontal,layout.center)}>
+              <div>Center</div>
+            </div>
+            <div className="demo" style={layout.extend(tallHorizontal,layout.start)}>
+              <div>start</div>
+            </div>
+            <div className="demo" style={layout.extend(tallHorizontal,layout.end)}>
+              <div>end</div>
+            </div>
+            
+            <h2 id="justification" class="has-permalink">Justification<a class="permalink" title="Permalink" href="#justification">#</a></h2>
+            <p>Justification controls the content position in the <em>main</em> axis. Use <code>startJustified</code> or <code>centerJustified</code> or <code>endJustified</code> or <code>aroundJustified</code> or <code>betweenJustified</code>.</p>
+            <div className="demo" style={layout.extend(layout.horizontal,layout.startJustified)}>
+              <div>start-justified</div>
+              <div>start-justified</div>
+              <div>start-justified</div>
+            </div>
+            <div className="demo" style={layout.extend(layout.horizontal,layout.centerJustified)}>
+              <div>center-justified</div>
+              <div>center-justified</div>
+              <div>center-justified</div>
+            </div>
+            <div className="demo" style={layout.extend(layout.horizontal,layout.endJustified)}>
+              <div>end-justified</div>
+              <div>end-justified</div>
+              <div>end-justified</div>
+            </div>
+            <div className="demo" style={layout.extend(layout.horizontal,layout.aroundJustified)}>
+              <div>around-justified</div>
+              <div>around-justified</div>
+              <div>around-justified</div>
+            </div>
+            <div className="demo" style={layout.extend(layout.horizontal,layout.betweenJustified)}>
+              <div>between-justified</div>
+              <div>between-justified</div>
+              <div>between-justified</div>
+            </div>
+            
+            <h2 id="self-alignment" class="has-permalink">Self alignment<a class="permalink" title="Permalink" href="#self-alignment">#</a></h2>
+            Alignment can also be set per-child (instead of using the layout containers rules):
+            <div className="demo" style={tallHorizontal}>
+              <div style={layout.selfStart}>selfStart</div>
+              <div style={layout.selfCenter}>selfCenter</div>
+              <div style={layout.selfEnd}>selfEnd</div>
+              <div style={layout.selfStretch}>selfStretch</div>
+              <div>Default is stretch</div>
+            </div>
+            
+            <h2 id="wrapping" class="has-permalink">Wrapping<a class="permalink" title="Permalink" href="#wrapping">#</a></h2>
+            <p>Wrapped layouts can be enabled with the <code>wrap</code> style.</p>
+            <div className="demo" style={layout.extend(narrowHorizontal,layout.wrap)}>
+              <div>Alpha</div>
+              <div>Beta</div>
+              <div>Gamma</div>
+              <div>Delta</div>
             </div>
             
         </div>;

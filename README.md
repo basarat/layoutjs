@@ -6,10 +6,17 @@ An abstraction over flexbox with semantic names for enhanced readability and mai
 ```js
 var layout = require('layoutjs');
 
-// TODO: insert react component
+var Demo = React.createClass({
+    render: function() {
+        return <div className="demo" style={layout.horizontal}>
+                    <div>One</div>
+                    <div>Two</div>
+                    <div>Three</div>
+               </div>;
+}
 ```
 
-Checkout out the complete demo. 
+Checkout the complete demo. 
 
 ## Inspiration
 Inspired by [polymer layout.html](https://www.polymer-project.org/0.5/docs/polymer/layout-attrs.html).
