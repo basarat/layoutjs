@@ -1,6 +1,6 @@
 {
   "name": "layoutjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Layout attributes abstraction over flexbox",
   "main": "layout.js",
   "scripts": {

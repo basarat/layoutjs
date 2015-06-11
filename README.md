@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/layoutjs.svg)](http://badge.fury.io/js/layoutjs)
+
 # LayoutJS
 An abstraction over flexbox with semantic names for enhanced readability and maintainability. Done using the CSSinJS pattern.
 
