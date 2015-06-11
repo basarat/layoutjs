@@ -18,7 +18,7 @@ var Demo = React.createClass({
 }
 ```
 
-Checkout the [complete demo]
+Checkout the [complete demo](https://basarat.github.io/layoutjs/demo/)
 
 And a [plnkr that you can mess with](http://plnkr.co/edit/T3N3xXk86ZHCD1iXNcJj?p=preview). 
 
