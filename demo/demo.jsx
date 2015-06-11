@@ -4,6 +4,10 @@ var narrowHorizontal = layout.extend(layout.horizontal,{width:'220px'});
 
 var content = 
 <div>
+  <h1>Pure Layout. Nothing more. Nothing less.</h1>
+  <div><a href="https://github.com/basarat/layoutjs/blob/gh-pages/demo/demo.jsx">Source</a></div>
+  <div><a href="http://plnkr.co/edit/T3N3xXk86ZHCD1iXNcJj?p=preview">Plnkr</a></div>  
+  
   <h2 id="horizontal-and-vertical-layout">Horizontal and vertical layout<a class="permalink" title="Permalink" href="#horizontal-and-vertical-layout">#</a></h2>
   <p>
       When a container includes the <code>horizontal</code> or <code>vertical</code> style, it can become a flex container with the specified orientation
@@ -15,7 +19,7 @@ var content =
   </div>
   
   <h3 id="flexible-children" class="has-permalink">Flexible children<a class="permalink" title="Permalink" href="#flexible-children">#</a></h3>
-  <p>Children of an element using the <code>layout</code> attributes can use <code>flex</code> attribute to control their own sizing. For example:</p>
+  <p>Children of an element using the <code>layout</code> styles can use <code>flex</code> style to control their own sizing. For example:</p>
   <div className="demo" style={layout.horizontal}>
     <div>Alpha</div>
     <div style={layout.flex}>Beta (flex)</div>
@@ -30,7 +34,7 @@ var content =
     <div>Gamma</div>
   </div>
   
-  <p>Children elements can be told to take up more space by including a “flex ratio” with the <code>flex</code> attribute. A flex ratio is specified with a number: <em>1</em>, <em>2</em>, <em>3</em>, currently up to <em>12</em>.</p>
+  <p>Children elements can be told to take up more space by including a “flex ratio” with the <code>flex</code> style. A flex ratio is specified with a number: <em>1</em>, <em>2</em>, <em>3</em>, currently up to <em>12</em>.</p>
   <p>For example, to make “Gamma” 2x larger than “Beta” and “Alpha” 3x larger, use <code>flex2</code> and <code>flex3</code>, respectively:</p>
   <div className="demo" style={layout.horizontal}>
     <div style={layout.flex3}>Alpha</div>
