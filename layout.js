@@ -1,6 +1,21 @@
 // Other vendor prefix support can be provided by external projects like : autoprefixer embedded into "radium"
 // https://github.com/Polymer/layout/blob/master/layout.html
-var extend = Object.create.bind(Object);
+function extend() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i - 0] = arguments[_i];
+    }
+    var newObj = {};
+    for (var _a = 0; _a < args.length; _a++) {
+        var obj = args[_a];
+        for (var key in obj) {
+            newObj[key] = obj[key];
+        }
+    }
+    return newObj;
+}
+exports.extend = extend;
+;
 exports.flexRoot = {
     display: 'flex'
 };

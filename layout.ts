@@ -1,7 +1,16 @@
 // Other vendor prefix support can be provided by external projects like : autoprefixer embedded into "radium"
 // https://github.com/Polymer/layout/blob/master/layout.html
 
-var extend = Object.create.bind(Object);
+export function extend(...args: any[]) {
+    var newObj = {};
+    for (let obj of args) {
+        for (let key in obj) {
+            //copy all the fields
+            newObj[key] = obj[key];
+        }
+    }
+    return newObj;
+};
 
 /** You don't need to use this generally. Prefer horizontal,vertical,horizontalReverse,verticalReverse */
 export var flexRoot = {
