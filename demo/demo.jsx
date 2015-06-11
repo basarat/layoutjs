@@ -1,12 +1,24 @@
-var tallVertical = layout.extend(layout.vertical,{height:'250px'});
-var tallHorizontal = layout.extend(layout.horizontal,{height:'150px'});
-var narrowHorizontal = layout.extend(layout.horizontal,{width:'220px'});
+var extend = layout.extend;
+var tall = {height:'150px'};
+var tallVertical = extend(layout.vertical,{height:'250px'});
+var tallHorizontal = extend(layout.horizontal,tall);
+var narrowHorizontal = extend(layout.horizontal,{width:'220px'});
+
 
 var content = 
 <div>
   <h1>Pure Layout. Nothing more. Nothing less.</h1>
   <div><a href="https://github.com/basarat/layoutjs/blob/gh-pages/demo/demo.jsx">Source</a></div>
   <div><a href="http://plnkr.co/edit/T3N3xXk86ZHCD1iXNcJj?p=preview">Plnkr</a></div>  
+      
+  <h2>Entice<a class="permalink" title="Permalink" href="#entice">#</a></h2>  
+  <p>
+      Use the <code>centerCenter</code> style to center Center
+  </p>
+  <div className="demo" style={extend(layout.centerCenter,tall)}>
+      <div>Look ma. Center Center and no table.</div>
+  </div>
+  
   
   <h2 id="horizontal-and-vertical-layout">Horizontal and vertical layout<a class="permalink" title="Permalink" href="#horizontal-and-vertical-layout">#</a></h2>
   <p>

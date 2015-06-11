@@ -108,7 +108,7 @@ exports.aroundJustified = {
 exports.betweenJustified = {
     justifyContent: 'space-between'
 };
-exports.centerCenter = extend(exports.center, exports.centerJustified);
+exports.centerCenter = extend(exports.flexRoot, exports.center, exports.centerJustified);
 exports.selfStart = {
     alignSelf: 'flex-start'
 };

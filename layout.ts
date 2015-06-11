@@ -127,7 +127,7 @@ export var betweenJustified = {
 // Alignment in both axes //
 ////////////////////////////
 
-export var centerCenter = extend(center, centerJustified);
+export var centerCenter = extend(flexRoot, center, centerJustified);
 
 ////////////////////
 // Self alignment //
