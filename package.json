@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "Layout attributes abstraction over flexbox",
   "main": "layout.js",
+  "typescript": {
+    "definition": "main.d.ts"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
