@@ -22,7 +22,6 @@ exports.flexRoot = {
 var inline = {
     display: 'inline-flex'
 };
-exports.horizontal, exports.vertical, exports.horizontalReverse, exports.verticalReverse;
 exports.horizontal = extend(exports.flexRoot, {
     flexDirection: 'row'
 });
@@ -151,7 +150,6 @@ exports.scroll = {
 exports.fixed = {
     position: 'fixed'
 };
-exports.fixedBottom, exports.fixedLeft, exports.fixedRight, exports.fixedTop;
 exports.fixedTop = extend(exports.fixed, {
     top: 0,
     left: 0,

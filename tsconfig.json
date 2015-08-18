@@ -11,6 +11,7 @@
         "suppressImplicitAnyIndexErrors": true
     },
     "files": [
-        "./layout.ts"
+        "./layout.ts",
+        "./demo/demo.tsx"
     ]
 }
