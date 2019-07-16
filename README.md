@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/layoutjs.svg)](http://badge.fury.io/js/layoutjs)
+[![npm version](https://badge.fury.io/js/layoutjs.svg)](http://badge.fury.io/js/layoutjs) [![Greenkeeper badge](https://badges.greenkeeper.io/basarat/layoutjs.svg)](https://greenkeeper.io/)
 
 # LayoutJS
 An abstraction over flexbox with semantic names for enhanced readability and maintainability. Done using the CSSinJS pattern.
